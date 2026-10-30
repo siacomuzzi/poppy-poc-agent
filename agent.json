@@ -2,7 +2,7 @@
   "client_id": "https://raw.githubusercontent.com/siacomuzzi/poppy-poc-agent/refs/heads/main/agent.json",
   "client_name": "Poppy POC Personal Agent",
   "jwks_uri":  "https://raw.githubusercontent.com/siacomuzzi/poppy-poc-agent/refs/heads/main/jwks.json",
-  "redirect_uris": ["http://127.0.0.1:8976/callback"],
+  "redirect_uris": ["https://siacomuzzi.github.io/poppy-poc-agent/callback.html"],
   "grant_types": ["authorization_code", "refresh_token"],
   "response_types": ["code"],
   "token_endpoint_auth_method": "private_key_jwt",
