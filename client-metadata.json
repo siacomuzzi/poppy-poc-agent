@@ -1,10 +1,21 @@
 {
-  "client_id": "https://raw.githubusercontent.com/siacomuzzi/poppy-poc-agent/refs/heads/main/client-metadata.json",
+  "client_id": "https://siacomuzzi.github.io/poppy-poc-agent/client-metadata.json",
   "client_name": "Poppy POC Personal Agent",
-  "jwks_uri": "https://raw.githubusercontent.com/siacomuzzi/poppy-poc-agent/refs/heads/main/jwks.json",
-  "redirect_uris": ["https://siacomuzzi.github.io/poppy-poc-agent/callback.html"],
-  "grant_types": ["authorization_code", "refresh_token"],
-  "response_types": ["code"],
+  "jwks_uri": "https://siacomuzzi.github.io/poppy-poc-agent/jwks.json",
+  "redirect_uris": [
+    "https://siacomuzzi.github.io/poppy-poc-agent/callback.html"
+  ],
+  "grant_types": [
+    "authorization_code",
+    "refresh_token"
+  ],
+  "response_types": [
+    "code"
+  ],
   "token_endpoint_auth_method": "private_key_jwt",
-  "extensions": { "operations": { "version": "2" } }
+  "extensions": {
+    "operations": {
+      "version": "2"
+    }
+  }
 }
