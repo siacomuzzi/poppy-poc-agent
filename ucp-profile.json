@@ -1,0 +1,51 @@
+{
+  "ucp": {
+    "version": "2026-08-25",
+    "capabilities": {
+      "dev.ucp.shopping.checkout": [
+        {
+          "version": "2026-08-25",
+          "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+          "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json"
+        }
+      ],
+      "dev.ucp.shopping.fulfillment": [
+        {
+          "version": "2026-08-25",
+          "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+          "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+          "extends": "dev.ucp.shopping.checkout"
+        }
+      ],
+      "dev.ucp.shopping.order": [
+        {
+          "version": "2026-08-25",
+          "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+          "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json"
+        }
+      ],
+      "dev.ucp.common.identity_linking": [
+        {
+          "version": "2026-08-25",
+          "spec": "https://ucp.dev/2026-08-25/specification/common/identity-linking/",
+          "schema": "https://ucp.dev/2026-08-25/schemas/common/identity_linking.json"
+        }
+      ]
+    },
+    "payment_handlers": {
+      "com.stripe.payments": [
+        {
+          "id": "stripe_payments",
+          "version": "2026-06-25",
+          "spec": "https://docs.stripe.com/agentic-commerce/protocols/ucp/stripe-payments-handler",
+          "schema": "https://ucp.stripe.com/payments/2026-06-25/schema.json",
+          "available_instruments": [
+            {
+              "type": "card"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
